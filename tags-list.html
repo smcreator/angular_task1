@@ -1,0 +1,9 @@
+<button class="btn btn-success" ng-click="createBookmark()">Add new item</button>
+<ul class="list-inline">
+    <li><h2>Tags:</h2></li>
+    <li ng-repeat="tag in tags">
+        <a href="#" ng-click="setTag(tag)" class="btn btn-default">
+        {{tag.name}}({{tag.tagsCount}})
+        </a>
+    </li>
+</ul>

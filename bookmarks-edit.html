@@ -1,0 +1,17 @@
+<form ng-show="state == 'edit'" role="form" ng-submit="submit()" novalidate>
+    <h3>Edit bookmark {{bookmark.name}}</h3>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" ng-model="bookmark.name" placeholder="Enter name:">
+    </div>
+    <div class="form-group">
+        <label for="url">Url</label>
+        <input type="text" class="form-control" id="url" ng-model="bookmark.href" placeholder="Enter url:">
+    </div>
+    <div class="form-group">
+        <label for="tags">Tags</label>
+        <input  type="text" class="form-control" id="tags" ng-model="bookmark.tags" placeholder="Enter comma separated tags:">
+    </div>
+    <button type="submit" class="btn btn-lg btn-success">Submit</button>
+    <button type="button" class="btn btn-lg btn-default pull-right" ng-click="cancel()">Cancel</button>
+</form>
